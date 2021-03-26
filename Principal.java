@@ -104,7 +104,7 @@ public class Principal extends JFrame implements ActionListener{
       labelBienvenido.setForeground(new Color(255, 255, 255));
       add(labelBienvenido);
 
-      labelTitle = new JLabel("Datos del trabajador para el cálculo de vacaciones");
+      labelTitle = new JLabel("Datos del trabajador para el calculo de vacaciones");
       labelTitle.setBounds(45,140,900,25);
       labelTitle.setFont(new Font("Andale Mono", 0, 24));
       labelTitle.setForeground(new Color(255, 255, 255));
@@ -162,11 +162,11 @@ public class Principal extends JFrame implements ActionListener{
       comboDepartamento.setForeground(new java.awt.Color(255, 0, 0));
       add(comboDepartamento);
       comboDepartamento.addItem("");
-      comboDepartamento.addItem("Atención al Cliente");
-      comboDepartamento.addItem("Departamento de Logística");
+      comboDepartamento.addItem("Atencion al Cliente");
+      comboDepartamento.addItem("Departamento de Logistica");
       comboDepartamento.addItem("Departamento de Gerencia");
 
-      labelAntiguedad = new JLabel("Selecciona la Antigüedad:");
+      labelAntiguedad = new JLabel("Selecciona la Antiguedad:");
       labelAntiguedad.setBounds(220,248,180,25);
       labelAntiguedad.setFont(new Font("Andale Mono", 1, 12));
       labelAntiguedad.setForeground(new Color(255, 255, 255));
@@ -179,11 +179,11 @@ public class Principal extends JFrame implements ActionListener{
       comboAntiguedad.setForeground(new java.awt.Color(255, 0, 0));
       add(comboAntiguedad);
       comboAntiguedad.addItem("");
-      comboAntiguedad.addItem("1 año de servicio");
-      comboAntiguedad.addItem("2 a 6 años de servicio");
-      comboAntiguedad.addItem("7 años o más de servicio");
+      comboAntiguedad.addItem("1 aÃ±o de servicio");
+      comboAntiguedad.addItem("2 a 6 aÃ±os de servicio");
+      comboAntiguedad.addItem("7 aÃ±os o mas de servicio");
 
-      labelResultado = new JLabel("Resultado del Cálculo:");
+      labelResultado = new JLabel("Resultado del Calculo:");
       labelResultado.setBounds(220,307,180,25);
       labelResultado.setFont(new Font("Andale Mono", 1, 12));
       labelResultado.setForeground(new Color(255, 255, 255));
@@ -194,12 +194,12 @@ public class Principal extends JFrame implements ActionListener{
       textarea1.setBackground(new Color(224, 224, 224));
       textarea1.setFont(new Font("Andale Mono", 1, 11));
       textarea1.setForeground(new Color(255, 0, 0));
-      textarea1.setText("\n   Aquí aparece el resultado del cálculo de las vacaciones.");
+      textarea1.setText("\n   Aqui aparece el resultado del calculo de las vacaciones.");
       scrollpane1 = new JScrollPane(textarea1);
       scrollpane1.setBounds(220,333,385,90);
       add(scrollpane1); 
 
-      labelfooter = new JLabel("©2017 The Coca-Cola Company | Todos los derechos reservados");
+      labelfooter = new JLabel("@2021 The Coca-Cola Company | Todos los derechos reservados");
       labelfooter.setBounds(135,445,500,30);
       labelfooter.setFont(new java.awt.Font("Andale Mono", 1, 12));
       labelfooter.setForeground(new java.awt.Color(255, 255, 255));
@@ -222,59 +222,59 @@ public class Principal extends JFrame implements ActionListener{
 
             } else {
 
-                if(Departamento.equals("Atención al Cliente")){
+                if(Departamento.equals("Atenciï¿½n al Cliente")){
 
-                                if(Antiguedad.equals("1 año de servicio")){
+                                if(Antiguedad.equals("1 aÃ±o de servicio")){
 					textarea1.setText("\n   El trabajador " + nombreTrabajador + " " + AP + " " + AM + 
                                                           "\n   quien labora en " + Departamento + " con " + Antiguedad + 
-                                                          "\n   recibe 6 días de vacaciones.");
+                                                          "\n   recibe 6 dias de vacaciones.");
 				}
-				if(Antiguedad.equals("2 a 6 años de servicio")){
+				if(Antiguedad.equals("2 a 6 aï¿½os de servicio")){
 					textarea1.setText("\n   El trabajador " + nombreTrabajador + " " + AP + " " + AM + 
                                                           "\n   quien labora en " + Departamento + " con " + Antiguedad + 
-                                                          "\n   recibe 14 días de vacaciones.");
+                                                          "\n   recibe 14 dias de vacaciones.");
 				}
-				if(Antiguedad.equals("7 años o más de servicio")){
+				if(Antiguedad.equals("7 aÃ±os o mas de servicio")){
 					textarea1.setText("\n   El trabajador " + nombreTrabajador + " " + AP + " " + AM + 
                                                           "\n   quien labora en " + Departamento + " con " + Antiguedad + 
-                                                          "\n   recibe 20 días de vacaciones.");
+                                                          "\n   recibe 20 dias de vacaciones.");
 				}
                      
                 }
-	        if(Departamento.equals("Departamento de Logística")){
+	        if(Departamento.equals("Departamento de Logistica")){
 
-				if(Antiguedad.equals("1 año de servicio")){
+				if(Antiguedad.equals("1 aÃ±o de servicio")){
 					textarea1.setText("\n   El trabajador " + nombreTrabajador + " " + AP + " " + AM + 
                                                           "\n   quien labora en " + Departamento + " con " + Antiguedad + 
-                                                          "\n   recibe 7 días de vacaciones.");
+                                                          "\n   recibe 7 dï¿½as de vacaciones.");
 				}
-				if(Antiguedad.equals("2 a 6 años de servicio")){
+				if(Antiguedad.equals("2 a 6 aÃ±os de servicio")){
 					textarea1.setText("\n   El trabajador " + nombreTrabajador + " " + AP + " " + AM + 
                                                           "\n   quien labora en " + Departamento + " con " + Antiguedad + 
-                                                          "\n   recibe 15 días de vacaciones.");
+                                                          "\n   recibe 15 dï¿½as de vacaciones.");
 				}
-				if(Antiguedad.equals("7 años o más de servicio")){
+				if(Antiguedad.equals("7 aÃ±os o mas de servicio")){
 					textarea1.setText("\n   El trabajador " + nombreTrabajador + " " + AP + " " + AM + 
                                                           "\n   quien labora en " + Departamento + " con " + Antiguedad + 
-                                                          "\n   recibe 22 días de vacaciones.");
+                                                          "\n   recibe 22 dï¿½as de vacaciones.");
 				}
 	    	}
 	    	if(Departamento.equals("Departamento de Gerencia")){
 
-				if(Antiguedad.equals("1 año de servicio")){
+				if(Antiguedad.equals("1 aÃ±o de servicio")){
 					textarea1.setText("\n   El trabajador " + nombreTrabajador + " " + AP + " " + AM + 
                                                           "\n   quien labora en " + Departamento + " con " + Antiguedad + 
-                                                          "\n   recibe 10 días de vacaciones.");
+                                                          "\n   recibe 10 dï¿½as de vacaciones.");
 				}
-				if(Antiguedad.equals("2 a 6 años de servicio")){
+				if(Antiguedad.equals("2 a 6 aÃ±os de servicio")){
 					textarea1.setText("\n   El trabajador " + nombreTrabajador + " " + AP + " " + AM + 
                                                           "\n   quien labora en " + Departamento + " con " + Antiguedad + 
-                                                          "\n   recibe 20 días de vacaciones.");
+                                                          "\n   recibe 20 dï¿½as de vacaciones.");
 				}
-				if(Antiguedad.equals("7 años o más de servicio")){
+				if(Antiguedad.equals("7 aÃ±os o mas de servicio")){
 					textarea1.setText("\n   El trabajador " + nombreTrabajador + " " + AP + " " + AM + 
                                                           "\n   quien labora en " + Departamento + " con " + Antiguedad + 
-                                                          "\n   recibe 30 días de vacaciones.");
+                                                          "\n   recibe 30 dï¿½as de vacaciones.");
 				}
 	    		}
             }
@@ -296,7 +296,7 @@ public class Principal extends JFrame implements ActionListener{
 	    txtAMaternoTrabajador.setText("");
             comboDepartamento.setSelectedIndex(0);
 	    comboAntiguedad.setSelectedIndex(0);
-	    textarea1.setText("\n   Aquí aparece el resultado del cálculo de las vacaciones.");	 
+	    textarea1.setText("\n   Aquï¿½ aparece el resultado del cï¿½lculo de las vacaciones.");	 
    
         }
 	if (e.getSource() == miSalir){
